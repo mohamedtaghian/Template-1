@@ -20,8 +20,6 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 /* End Global Rules */
-
-
 /* Start Components */
 .special-heading {
   color: #ebeced;
@@ -46,7 +44,6 @@ body {
   }
 }
 /* End Components */
-
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -72,21 +69,21 @@ body {
   }
 }
 /* Start Header */
-.header {
+header {
   padding: 20px;
 }
-.header .container {
+header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header .container img {
+header .container img {
   width: 60px;
 }
-.header .container .links {
+header .container .links {
   position: relative;
 }
-.header .container .links ul {
+header .container .links ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -94,10 +91,11 @@ body {
   position: absolute;
   right: 0;
   min-width: 200px;
-  top: calc(100% + 22px);
+  top: calc(100% + 8px);
   display: none;
+  margin-top: 12px;
 }
-.header .links ul::before {
+header .links ul::before {
   content: "";
   border-width: 10px;
   border-style: solid;
@@ -106,20 +104,20 @@ body {
   right: 0px;
   top: -20px;
 }
-.header .links:hover ul {
+header .links:hover ul {
   display: block;
 }
-.header .links ul li a {
+header .links ul li a {
   display: block;
   padding: 15px;
   text-decoration: none;
   color: var(--secondarycolor);
   transition: 0.3s;
 }
-.header .links ul li a:hover {
+header .links ul li a:hover {
   padding-left: 25px;
 }
-.header .links ul li:not(:last-child) a {
+header .links ul li:not(:last-child) a {
   border-bottom: 1px solid #ddd;
 }
 /* End Header */
@@ -168,7 +166,7 @@ body {
   font-size: 50px;
   padding-bottom: 20px;
 }
-.features .container .feat-text h3 {
+.features .container .feat-text h2 {
   font-weight: 800;
   margin: 20px 0;
 }
@@ -316,7 +314,6 @@ body {
   z-index: -1;
   right: -160px;
 }
-
 .about-content .image img {
   max-width: 100%;
 }
@@ -390,17 +387,17 @@ body {
 }
 /* End Contact */
 /* Start Footer */
-.footer {
+footer {
   background-color: var(--maincolor);
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
   color: white;
 }
-.footer p {
+footer p {
   margin: 0;
 }
-.footer span {
+footer span {
   font-weight: bold;
   color: var(--secondarycolor);
 }
